@@ -17,10 +17,33 @@ preOp_RtETVb = rbind(preOpRtu, preOpVbb)
 ##recupère les labels des variables
 labelsPreOp = colnames(preOpVap)
 
-##TODO : réecrire les labels
 
+##réecrire les labels
+labelsPreOpTraitee = c("Age",
+                  "Comorbidité cardio Vx",
+                  "Durée traitement médical (mois)",
+                  "Porteur de sonde",
+                  "IPSS P.O",
+                  "QoL P.O",
+                  "Qmax P.0 (ml/s)",
+                  "PSA (ng/ml)",
+                  "Volume prostatique (ml)",
+                  "Résidu post mictionnel (ml)",
+                  "Indication",
+                  "Anestésie",
+                  "Evenement H.D",
+                  "Technique",
+                  "Transfusion PerO",
+                  "Temps OP",
+                  "Volume résequé (ml)",
+                  "Délais ablation (jours",
+                  "Caillotage",
+                  "Reprise au bloc"
+)
 
-
+colnames(preOpRtu) <- labelsPreOpTraitee;
+colnames(preOpVap) <- labelsPreOpTraitee;
+colnames(preOpVbb) <- labelsPreOpTraitee;
 
 ##Analyse descriptive###
 
